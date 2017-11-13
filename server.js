@@ -65,7 +65,9 @@ router.get('/data',data.getData);
 app.post('/login',authenticate.authenticate);
 app.post('/register',register.registerUser)
 
-
+app.get('/', function(req,res) {
+	res.send('HI')
+})
 
 
 
