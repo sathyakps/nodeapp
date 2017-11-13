@@ -430,14 +430,14 @@ var ProductComponent = (function () {
             'price': new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["b" /* FormControl */](null, __WEBPACK_IMPORTED_MODULE_3__angular_forms__["k" /* Validators */].required)
         });
         this.allCategories = this.categoryService.getCategories().subscribe(function (response) {
-            _this.allCategories = response.json()[0]['category'];
+            _this.allCategories = response[0]['category'];
         });
     };
     ProductComponent.prototype.addProduct = function () {
         var _this = this;
         this.productService.addProduct(this.selectedCategory, this.productForm.value).subscribe(function (response) {
             _this.allData = response.json();
-            _this.allCategories = response.json()[0]['category'];
+            _this.allCategories = response[0]['category'];
             _this.getProductsOfCategory();
             _this.snackBar.open('Product Added Successfully', 'Ok', {
                 duration: 5000,
