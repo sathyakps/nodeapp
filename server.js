@@ -66,9 +66,7 @@ app.post('/login',authenticate.authenticate);
 app.post('/register',register.registerUser)
 
 app.use(express.static(__dirname + '/dist'));
-app.all('*', function(req, res) {
-  res.redirect("https://sathya-pos.herokuapp.com");
-});
+
 
 
 app.listen(process.env.PORT || 3000,function(){
