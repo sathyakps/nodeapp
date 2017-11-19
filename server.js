@@ -10,7 +10,7 @@ process.env.SECRET_KEY="thisismysecretkey";
 
 var app = express();
 app.use(function (req, res, next) {
-      res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
+      res.setHeader('Access-Control-Allow-Origin', 'https://sathya-pos.herokuapp.com');
       res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
       res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type,token');
     // res.setHeader("X-ACCESS_TOKEN", "Access-Control-Allow-Origin", "Authorization", "Origin", "x-requested-with", "Content-Type", "Content-Range", "Content-Disposition", "Content-Description");
