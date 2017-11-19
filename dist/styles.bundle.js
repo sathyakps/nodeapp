@@ -105,7 +105,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Sai
 exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../material/prebuilt-themes/indigo-pink.css"), "");
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n body {\n   background-image: url(" + __webpack_require__("../../../../../src/assets/background.jpg") + ");\n   background-repeat: no-repeat;\n   background-size: cover;\n }\n", ""]);
+exports.push([module.i, "\n/* You can add global styles to this file, and also import other style files */\n body {\n   background-image: url(" + __webpack_require__("../../../../../src/assets/background.jpg") + ");\n   background-repeat: no-repeat;\n   background-size: cover;\n }\n\n h3 {\n  font-family: 'Saira Semi Condensed', sans-serif;\n}\n", ""]);
 
 // exports
 
