@@ -80,6 +80,6 @@ app.post('/register',register.registerUser)
 
 
 
-app.listen(3000,function(){
+app.listen(process.env.PORT,function(){
   console.log('Server Started. App Listening at port 3000')
 })
