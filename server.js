@@ -130,11 +130,14 @@ app.post('/register',register.checkUniqueUser,register.registerUser)
 // app.post('/register',register.registerUser);
 
 
+app.use(express.static(__dirname + '/dist'));
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname + '/dist/index.html'));
+});
 
 
 
 
-
-app.listen(3000,function(){
+app.listen(process.env.PORT || 8080,function(){
   console.log('Server Started. App Listening at port 3000')
 })
